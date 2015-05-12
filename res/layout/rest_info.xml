@@ -1,0 +1,49 @@
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      
+android:id="@+id/rest_info"
+  android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+       android:background="#b7c723"
+    >
+
+<TextView
+    android:id="@+id/RestInfo"
+  android:layout_gravity="center"
+    android:layout_width="wrap_content"
+     android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/RestAddress"
+    android:textColor="@android:color/black"
+     android:textSize="16sp" 
+     android:text="Restaurant Info"   
+                     />
+
+<TextView
+    android:id="@+id/RestName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+   android:text="Restaurant Name"
+    
+    android:textColor="@android:color/black"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+<TextView
+    android:id="@+id/RestAddress"
+  android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/RestName"
+    android:layout_centerHorizontal="true"
+    android:textColor="@android:color/black"
+     android:textSize="18sp"    
+     android:text="Restaurant Address"
+                     />
+
+
+
+  </RelativeLayout>
+

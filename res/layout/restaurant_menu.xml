@@ -1,0 +1,22 @@
+ <com.example.munchzone.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/menu_content"
+       android:color="#EE2222"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       
+        </FrameLayout>
+    <ListView android:id="@+id/slider"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"
+        android:background="#1B8D11"/>
+ </com.example.munchzone.CustomDrawerLayout>

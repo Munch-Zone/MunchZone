@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+     
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       android:text="Name"
+       android:textStyle="bold"/>
+  <TextView
+        android:id="@+id/menu_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+       android:visibility="invisible"
+         />
+ <!--  
+    <TextView
+        android:id="@+id/menu_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/menu_name"
+       android:layout_alignParentRight="true"
+       android:text="price"
+       android:layout_alignEnd="@+id/menu_name"
+      
+         />-->
+   
+   <TextView
+        android:id="@+id/menu_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/menu_name"
+       android:layout_alignParentLeft="true"
+       android:text="price"
+      
+      
+         />
+
+</RelativeLayout>

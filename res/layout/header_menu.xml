@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      
+android:id="@+id/header_menu"
+  android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:descendantFocusability="beforeDescendants"
+android:focusableInTouchMode="true"
+    android:layout_alignParentTop="true"
+      android:addStatesFromChildren="true"
+      android:background="#b7c723"
+      android:clipChildren="false"
+    >
+    
+       <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+               android:layout_toStartOf="@+id/next"
+                android:layout_toLeftOf="@+id/next"
+                  android:layout_marginRight="5dp"
+                 android:layout_marginEnd="5dp"
+                android:background="@drawable/info"
+                android:clickable="true"
+                    android:visibility="gone"
+                android:gravity="center" />
+      
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:id="@+id/backInfo"
+      android:background="@drawable/back_icon"
+           android:layout_centerVertical="true"
+      android:clickable="true"
+      
+      android:visibility="gone"
+   
+      />
+      
+     <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:id="@+id/textInfo"
+      android:text="Info"
+           android:layout_centerVertical="true"
+           android:layout_centerInParent="true"
+      android:clickable="true"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:visibility="gone"
+   
+      /> 
+      
+ <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:id="@+id/back"
+      android:background="@drawable/back_icon"
+           android:layout_centerVertical="true"
+      android:clickable="true"
+       android:visibility="gone"
+     
+   
+      />
+
+        <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:id="@+id/next"
+      android:clickable="true"
+     android:layout_alignParentEnd="true"
+      android:background="@drawable/fwd_icon"
+      android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+         android:visibility="invisible"
+      />
+
+              
+            
+<!-- @android:drawable/ic_menu_search -->
+ <!--    <AutoCompleteTextView
+                android:id="@+id/AClistview"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/search"
+                android:background="@drawable/line"
+                android:visibility="gone"
+                android:completionThreshold="1"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="1dp"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Search by Item Name"
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions"
+                android:nextFocusLeft="@id/AClistview"
+                android:nextFocusUp="@id/AClistview"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+         <ImageView
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:clickable="true"
+  android:visibility="gone"
+       
+android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+android:background="@android:drawable/ic_menu_search"
+android:id="@+id/search" >
+</ImageView> -->
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/next"
+                android:layout_margin="5dp"
+                android:layout_marginRight="29dp"
+                android:layout_centerInParent="true"
+                 android:gravity="center"
+                android:singleLine="true"
+                    android:visibility="gone"
+                android:text="Menu List"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/AClistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             
+                android:layout_toRightOf="@+id/search"
+                android:background="@drawable/line"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="1dp"
+                android:drawableStart="@drawable/search"
+                android:ems="10"
+                android:layout_centerVertical="true"
+                android:singleLine="false"
+                android:focusable="false"
+               
+                android:hint="Search by Menu Name"
+                android:imeOptions="actionSearch"
+                android:inputType="textNoSuggestions"
+               
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+              android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+
+               
+            </AutoCompleteTextView>
+
+ <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            
+                android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+              android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+              android:visibility="gone"
+                android:background="@drawable/back_icon"
+                android:clickable="true" >
+                </ImageView>
+            
+            
+             <ImageView
+                 android:id="@+id/searchList"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignTop="@+id/next"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginEnd="5dp"
+                     android:visibility="gone"
+               android:layout_toLeftOf="@+id/info"
+                  android:layout_toStartOf="@+id/info"
+                 android:background="@drawable/search"
+                 android:clickable="true"
+                 android:gravity="center" />
+             
+            
+   </RelativeLayout>
+

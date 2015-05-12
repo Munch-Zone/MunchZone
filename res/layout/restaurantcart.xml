@@ -1,0 +1,42 @@
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.example.munchzone.SwipeMenuListView
+        android:id="@+id/cartListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Order"
+        android:layout_alignParentBottom="true"
+        android:text="MakePayment"
+        android:layout_below="@+id/cartListView" />
+</RelativeLayout> -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent"
+    >
+ <com.example.munchzone.SwipeMenuListView
+        android:id="@+id/cartListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#99CA3C"
+        android:dividerHeight="1dp" />
+
+    <Button
+          android:id="@+id/Order"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:text="Make Payment" />
+
+</RelativeLayout>
